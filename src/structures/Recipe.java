@@ -16,6 +16,10 @@ public class Recipe
 	 * A String holding the instructions for the Recipe
 	 */
 	private String instructions;
+	/**
+	 * The name of the recipe
+	 */
+	private String name;
 	
 	/**
 	 * @param ingredients - A List of Ingredient objects associated with the recipe
@@ -67,5 +71,22 @@ public class Recipe
 	public void setInstructions(String instructions)
 	{
 		this.instructions = instructions;
+	}
+	
+	/**
+	 * Returns this Recipe's name
+	 * @return name - The name of the Recipe
+	 */
+	public String getName()
+	{
+		return name;
+	}
+	/**
+	 * Sets the name to the user-provided String
+	 * @param name - The name of the Recipe
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
 	}
 }
